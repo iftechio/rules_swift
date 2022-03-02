@@ -2851,7 +2851,7 @@ def _emitted_output_nature(feature_configuration, user_compile_flags):
 
     return struct(
         emits_multiple_objects = not (is_wmo and is_single_threaded),
-        emits_partial_modules = not is_wmo,
+        emits_partial_modules = False,
     )
 
 def _exclude_swift_incompatible_define(define):
